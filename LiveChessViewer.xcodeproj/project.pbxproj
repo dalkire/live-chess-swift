@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892B56A62258291900230311 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 892B56A52258291900230311 /* Cartfile */; };
+		892B56A922582F4900230311 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 892B56A822582F4900230311 /* Prelude.framework */; };
 		89EF06EB22482BF20048D4CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF06EA22482BF20048D4CC /* AppDelegate.swift */; };
 		89EF06ED22482BF20048D4CC /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF06EC22482BF20048D4CC /* FirstViewController.swift */; };
 		89EF06EF22482BF20048D4CC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF06EE22482BF20048D4CC /* SecondViewController.swift */; };
 		89EF06F222482BF20048D4CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EF06F022482BF20048D4CC /* Main.storyboard */; };
 		89EF06F422482BF50048D4CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89EF06F322482BF50048D4CC /* Assets.xcassets */; };
 		89EF06F722482BF50048D4CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89EF06F522482BF50048D4CC /* LaunchScreen.storyboard */; };
+		89EF06FF22482D850048D4CC /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EF06FE22482D850048D4CC /* Board.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		892B56A52258291900230311 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		892B56A822582F4900230311 /* Prelude.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Prelude.framework; path = Carthage/Build/iOS/Prelude.framework; sourceTree = "<group>"; };
 		89EF06E722482BF20048D4CC /* LiveChessViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveChessViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89EF06EA22482BF20048D4CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89EF06EC22482BF20048D4CC /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		89EF06F322482BF50048D4CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89EF06F622482BF50048D4CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89EF06F822482BF50048D4CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89EF06FE22482D850048D4CC /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892B56A922582F4900230311 /* Prelude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		892B56A4225828F400230311 /* Tooling */ = {
+			isa = PBXGroup;
+			children = (
+				892B56A52258291900230311 /* Cartfile */,
+			);
+			path = Tooling;
+			sourceTree = "<group>";
+		};
+		892B56A722582F4900230311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				892B56A822582F4900230311 /* Prelude.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		89EF06DE22482BF20048D4CC = {
 			isa = PBXGroup;
 			children = (
 				89EF06E922482BF20048D4CC /* LiveChessViewer */,
 				89EF06E822482BF20048D4CC /* Products */,
+				892B56A4225828F400230311 /* Tooling */,
+				892B56A722582F4900230311 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +84,7 @@
 				89EF06EA22482BF20048D4CC /* AppDelegate.swift */,
 				89EF06EC22482BF20048D4CC /* FirstViewController.swift */,
 				89EF06EE22482BF20048D4CC /* SecondViewController.swift */,
+				89EF06FE22482D850048D4CC /* Board.swift */,
 				89EF06F022482BF20048D4CC /* Main.storyboard */,
 				89EF06F322482BF50048D4CC /* Assets.xcassets */,
 				89EF06F522482BF50048D4CC /* LaunchScreen.storyboard */,
@@ -77,6 +103,7 @@
 				89EF06E322482BF20048D4CC /* Sources */,
 				89EF06E422482BF20048D4CC /* Frameworks */,
 				89EF06E522482BF20048D4CC /* Resources */,
+				892B56AA22582F5F00230311 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -127,11 +154,34 @@
 			files = (
 				89EF06F722482BF50048D4CC /* LaunchScreen.storyboard in Resources */,
 				89EF06F422482BF50048D4CC /* Assets.xcassets in Resources */,
+				892B56A62258291900230311 /* Cartfile in Resources */,
 				89EF06F222482BF20048D4CC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		892B56AA22582F5F00230311 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Prelude.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Prelude.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89EF06E322482BF20048D4CC /* Sources */ = {
@@ -140,6 +190,7 @@
 			files = (
 				89EF06EF22482BF20048D4CC /* SecondViewController.swift in Sources */,
 				89EF06EB22482BF20048D4CC /* AppDelegate.swift in Sources */,
+				89EF06FF22482D850048D4CC /* Board.swift in Sources */,
 				89EF06ED22482BF20048D4CC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,6 +339,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P68YHZQ8C9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LiveChessViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +361,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P68YHZQ8C9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = LiveChessViewer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

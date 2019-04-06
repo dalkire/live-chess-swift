@@ -1,0 +1,9 @@
+{
+  "commitish" : "0.2.0",
+  "iOS" : [
+    {
+      "name" : "Prelude",
+      "hash" : "2d650da24f8f64aa776e694afeacf0d667aea16a7d5ec0d4c20a4cdc3a843fbe"
+    }
+  ]
+}
